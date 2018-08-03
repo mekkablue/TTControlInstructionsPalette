@@ -27,7 +27,7 @@ class ControlInstructions (PalettePlugin):
 			'de': u'TT-Kontrollinstruktionen'
 		})
 		
-		self.min = 200
+		self.min = 100
 		self.max = 1000
 		
 		# Load .nib dialog (without .extension)
@@ -65,7 +65,12 @@ class ControlInstructions (PalettePlugin):
 				else:
 					self.instanceLabel.setStringValue_("Please select an instance")
 					self.controlInstructionsField.setStringValue_("")
-				
+
+	def currentHeight(self):
+		return Glyphs.intDefaults["com.mekkablue.ControlInstructionsPalette.height"]
+	def setCurrentHeight_(self, newHeight):
+		Glyphs.intDefaults["com.mekkablue.ControlInstructionsPalette.height"] = newHeight
+
 	
 	def __file__(self):
 		"""Please leave this method unchanged"""
