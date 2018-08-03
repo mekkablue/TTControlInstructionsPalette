@@ -71,19 +71,11 @@ class ControlInstructions (PalettePlugin):
 	def setCurrentHeight_(self, newHeight):
 		Glyphs.intDefaults["com.mekkablue.ControlInstructionsPalette.height"] = newHeight
 
-	
 	def __file__(self):
 		"""Please leave this method unchanged"""
 		return __file__
-	
-	# Temporary Fix
-	# Sort ID for compatibility with v919:
-	_sortID = 0
+
 	def setSortID_(self, id):
-		try:
-			self._sortID = id
-		except Exception as e:
-			self.logToConsole( "setSortID_: %s" % str(e) )
+		pass
 	def sortID(self):
-		return self._sortID
-	
+		return 0
