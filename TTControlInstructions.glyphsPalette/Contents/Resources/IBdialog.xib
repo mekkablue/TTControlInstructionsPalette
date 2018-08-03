@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ControlInstructions">
+            <connections>
+                <outlet property="controlInstructionsField" destination="Aa7-5H-o6b" id="jPr-jB-ZVD"/>
+                <outlet property="dialog" destination="1" id="Tkv-lP-HY5"/>
+                <outlet property="instanceLabel" destination="xmJ-rn-hjB" id="whD-Ih-TW4"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1" customClass="GSPaletteView">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmJ-rn-hjB">
+                    <rect key="frame" x="-2" y="380" width="169" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Please select an instance" id="HCc-E1-WPp">
+                        <font key="font" metaFont="systemMedium" size="11"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" mirrorLayoutDirectionWhenInternationalizing="never" allowsCharacterPickerTouchBarItem="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-5H-o6b">
+                    <rect key="frame" x="-2" y="9" width="169" height="363"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <string key="toolTip">Syntax:
+
+glyph touch 1-5 y 0.5 @ 23-27
+
+glyph left 10</string>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" baseWritingDirection="leftToRight" drawsBackground="YES" id="ItX-dD-Nwh">
+                        <font key="font" metaFont="system" size="7"/>
+                        <string key="placeholderString">Cheat sheet:
+glyph touch 1-5 y 0.5 @ 23-27
+glyph left 10</string>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="setInstructions:" target="-2" id="yBI-Fd-9VP"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="_controller" destination="-2" id="jOT-R9-oyt"/>
+            </connections>
+            <point key="canvasLocation" x="146.5" y="327"/>
+        </customView>
+    </objects>
+</document>
