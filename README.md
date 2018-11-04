@@ -1,4 +1,4 @@
-# TTControlInstructionsPalette
+# TT Control Instructions Palette
 
 This is a plugin for the [Glyphs font editor](http://glyphsapp.com/). It adds a palette to the sidebar for writing [ttfAutohint control instructions](https://www.freetype.org/ttfautohint/doc/ttfautohint.html#control-instructions).
 
