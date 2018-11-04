@@ -59,9 +59,11 @@ class ControlInstructions (PalettePlugin):
 					self.instanceLabel.setStringValue_(currentInstance.name)
 					controlInstructions = currentInstance.customParameters["TTFAutohint control instructions"]
 					if controlInstructions:
+						if controlInstructions[-1] != "\n":
+							controlInstructions+="\n"
 						self.controlInstructionsField.setStringValue_(controlInstructions)
 					else:
-						self.controlInstructionsField.setStringValue_("")
+						self.controlInstructionsField.setStringValue_("\n")
 				else:
 					self.instanceLabel.setStringValue_("Please select an instance")
 					self.controlInstructionsField.setStringValue_("")

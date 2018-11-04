@@ -30,9 +30,7 @@
                 <textField horizontalCompressionResistancePriority="250" mirrorLayoutDirectionWhenInternationalizing="never" allowsCharacterPickerTouchBarItem="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-5H-o6b">
                     <rect key="frame" x="-1" y="9" width="167" height="237"/>
                     <string key="toolTip">Syntax:
-
 glyph touch 1-5 y 0.5 @ 23-27
-
 glyph left 10</string>
                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" baseWritingDirection="leftToRight" drawsBackground="YES" id="ItX-dD-Nwh">
                         <font key="font" metaFont="system" size="7"/>
