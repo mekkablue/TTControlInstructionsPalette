@@ -23,8 +23,8 @@ This is a plugin for the [Glyphs font editor](http://glyphsapp.com/). It adds a 
 
 * For a quick reminder of the control instruction syntax, hold your mouse pointer for a second over the palette, and you will see a tooltip showing two examples. Alternatively switch to display no instance or *Show All Instances* in the Preview area, and click once in the canvas. The palette will show a placeholder text showing instruction code samples.
 * Run Windows in a virtualisation app like VMware Fusion, Parallels, or the like.
-* Switch to the TT Instructor tool (shortcut I) to see TT point index numbers.
 * For testing, keep a waterfall open in Windows. To do so, you can e.g. point a web browser to the built-in preview server: In the TT Instructor, right-click and choose *Show Preview Address…* from the context menu. Paste the address into your Windows browser of choice.
+* Switch to the TT Instructor tool (shortcut I) to see TT point index numbers.
 * To see index numbers for all TT points, including off-curves, run this Python command in *Window > Macro Panel:*
   `Glyphs.defaults["TTPreviewAlsoShowOffCurveIndexes"] = True`
 * The font size in the palette is kept small intentionally because it assumes that you are zoomed in with the macOS screen zoom in order to inspect the pixel images in small sizes. To activate the screen zoom, go to *System Preferences > Accessibility > Zoom.* There, turn on the *Scroll gesture with modifier keys,* and turn off *Smooth images.* Zoom in by holding down the modifier key(s) specified and simultaneously rolling the scroll wheel of your mouse or sliding two fingers forward and backward on the trackpad.
