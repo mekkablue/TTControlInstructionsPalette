@@ -1,4 +1,5 @@
 # encoding: utf-8
+from __future__ import division, print_function, unicode_literals
 
 ###########################################################################################################
 #
@@ -21,6 +22,7 @@ class ControlInstructions (PalettePlugin):
 	controlInstructionsField = objc.IBOutlet()
 	instanceLabel = objc.IBOutlet()
 	
+	@objc.python_method
 	def settings(self):
 		self.name = Glyphs.localize({
 			'en': u'TT Control Instructions',
@@ -33,10 +35,12 @@ class ControlInstructions (PalettePlugin):
 		# Load .nib dialog (without .extension)
 		self.loadNib('IBdialog', __file__)
 	
+	@objc.python_method
 	def start(self):
 		# Adding a callback for the 'GSUpdateInterface' event
 		Glyphs.addCallback(self.update, UPDATEINTERFACE)
 	
+	@objc.python_method
 	def __del__(self):
 		Glyphs.removeCallback(self.update)
 
@@ -50,6 +54,7 @@ class ControlInstructions (PalettePlugin):
 				if type(currentInstance) != str:
 					currentInstance.customParameters["TTFAutohint control instructions"] = self.controlInstructionsField.stringValue()
 
+	@objc.python_method
 	def update( self, sender ):
 		if self.windowController():
 			thisFont = self.windowController().document().font
@@ -70,14 +75,16 @@ class ControlInstructions (PalettePlugin):
 
 	def currentHeight(self):
 		return Glyphs.intDefaults["com.mekkablue.ControlInstructionsPalette.height"]
+	
 	def setCurrentHeight_(self, newHeight):
 		Glyphs.intDefaults["com.mekkablue.ControlInstructionsPalette.height"] = newHeight
 
+	@objc.python_method
 	def __file__(self):
 		"""Please leave this method unchanged"""
 		return __file__
 
-	def setSortID_(self, id):
-		pass
-	def sortID(self):
-		return 0
+	# def setSortID_(self, id):
+	# 	pass
+	# def sortID(self):
+	# 	return 0
