@@ -13,7 +13,7 @@
 	<key>CFBundleName</key>
 	<string>ControlInstructions</string>
 	<key>CFBundleVersion</key>
-	<string>%</string>
+	<string>5</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.4</string>
 	<key>UpdateFeedURL</key>
