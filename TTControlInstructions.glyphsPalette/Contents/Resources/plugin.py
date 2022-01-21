@@ -59,7 +59,11 @@ class ControlInstructions (PalettePlugin):
 		if self.windowController():
 			thisFont = self.windowController().document().font
 			if thisFont and thisFont.currentTab:
-				currentInstance = thisFont.currentTab.previewInstances
+				currentInstance = None
+				try:
+					currentInstance = thisFont.currentTab.previewInstances
+				except Exception as e:
+					print(e)
 				if currentInstance and type(currentInstance) != str:
 					self.instanceLabel.setStringValue_(currentInstance.name)
 					controlInstructions = currentInstance.customParameters["TTFAutohint control instructions"]

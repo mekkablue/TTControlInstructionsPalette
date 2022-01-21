@@ -13,9 +13,9 @@
 	<key>CFBundleName</key>
 	<string>ControlInstructions</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.7</string>
+	<string>1.0.8</string>
 	<key>CFBundleVersion</key>
-	<string>9</string>
+	<string>10</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright, Rainer Erich Scheichelbauer, 2018</string>
 	<key>NSPrincipalClass</key>
@@ -29,6 +29,6 @@
 	<key>productPageURL</key>
 	<string>https://github.com/mekkablue/ControlInstructions</string>
 	<key>productReleaseNotes</key>
-	<string>update binary files for Glyphs3</string>
+	<string>Catch a rare error, circumventing #1</string>
 </dict>
 </plist>
